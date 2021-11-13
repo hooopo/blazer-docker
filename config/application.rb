@@ -27,6 +27,9 @@ module BlazerSolo
     config.secret_key_base = ENV["SECRET_KEY_BASE"] || SecureRandom.hex(30)
 
     config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"] != "disabled"
+    config.session_store :cookie_store, 
+      :key => '_my_session', 
+      :expire_after => 1.year
 
     if ENV["RAILS_LOG_TO_STDOUT"] != "disabled"
       logger           = ActiveSupport::Logger.new(STDOUT)
