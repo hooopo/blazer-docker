@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 6.0.0"
-gem "blazer"
+gem "blazer", path: "../blazer"
 gem "puma"
 gem "tzinfo-data"
 
@@ -23,9 +23,13 @@ gem "neo4j-core"
 # gem "activerecord-oracle_enhanced-adapter"
 # gem "ruby-oci8" # for oracle
 gem "pg"
+# gem "activerecord-tidb-adapter"
 gem "presto-client"
 gem "restforce"
 # gem "odbc_adapter" # TODO add snowflake driver
 gem "sqlite3"
+gem "mysql2"
 # gem "tiny_tds"
 # gem "activerecord-sqlserver-adapter"
+
+gem "pry-rails", "~> 0.3.9"
