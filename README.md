@@ -2,6 +2,11 @@
 
 A Docker image for [Blazer](https://github.com/ankane/blazer)
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/63877/141671812-2a4a56d1-a23d-4410-9e7f-3817119b1f28.png)
+
+
 ## Getting Started
 
 Pull the image
