@@ -1,5 +1,6 @@
-PATH
-  remote: ../blazer
+GIT
+  remote: https://github.com/hooopo/blazer.git
+  revision: 6e4729656bc5ac4b5b01fb3d442049c5291d28f2
   specs:
     blazer (2.4.7)
       activerecord (>= 5)
@@ -308,4 +309,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.2.25
+   2.2.27
