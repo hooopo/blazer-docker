@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hooopo/blazer.git
-  revision: 6e4729656bc5ac4b5b01fb3d442049c5291d28f2
+  revision: 773298e6355d204ec98532703150118ec15581f9
   specs:
     blazer (2.4.7)
       activerecord (>= 5)
@@ -154,7 +154,7 @@ GEM
     hexspace (0.1.1)
       thrift
     httpclient (2.8.3)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     ignite-client (0.1.1)
     ione (1.2.4)
@@ -190,7 +190,7 @@ GEM
       typhoeus (>= 1.1.2)
     net_tcp_client (2.2.0)
     nio4r (2.5.8)
-    nokogiri (1.12.4)
+    nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     os (1.1.1)
@@ -207,7 +207,7 @@ GEM
     public_suffix (4.0.6)
     puma (5.4.0)
       nio4r (~> 2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -279,7 +279,7 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.4.2)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   ruby
