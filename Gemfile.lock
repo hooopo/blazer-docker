@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hooopo/blazer.git
-  revision: cd6664fc97cf59e0806cf6341081a6feaa0e1e00
+  revision: 3c3e87e969c9254f209f51e2025013ac3ab1aea1
   specs:
     blazer (2.4.7)
       activerecord (>= 5)
