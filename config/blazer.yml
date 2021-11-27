@@ -1,11 +1,8 @@
 # see https://github.com/ankane/blazer for more info
 
 data_sources:
-  second:
-    database: bikeshare
-    url: <%= ENV["DATABASE_URL"] %>
   main:
-    url: <%= ENV["BLAZER_DATABASE_URL"] %>
+    url: <%= ENV["BLAZER_DATABASE_URL"] || ENV["DATABASE_URL"] %>
 
     # statement timeout, in seconds
     # none by default
