@@ -14,7 +14,7 @@ ENV INSTALL_PATH /app
 RUN mkdir -p $INSTALL_PATH
 
 WORKDIR $INSTALL_PATH
-
+COPY blazer ./blazer
 COPY Gemfile Gemfile.lock ./
 
 RUN bundle install --binstubs

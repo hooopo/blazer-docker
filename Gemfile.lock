@@ -1,5 +1,5 @@
 PATH
-  remote: ../blazer
+  remote: blazer
   specs:
     blazer (2.4.7)
       activerecord (>= 5)
