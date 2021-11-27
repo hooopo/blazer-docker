@@ -2,3 +2,4 @@ log
 .vagrant
 tmp
 *.log
+start.sh
