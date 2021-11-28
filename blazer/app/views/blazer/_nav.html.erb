@@ -1,3 +1,4 @@
+<% if params[:admin].present? %>
 <div class="btn-group" style="vertical-align: top; margin-right: 5px;">
   <%= link_to "Home", root_path, class: "btn btn-primary" %>
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,3 +17,4 @@
     <li><%= link_to "New Check", new_check_path(check_params) %></li>
   </ul>
 </div>
+<% end %>

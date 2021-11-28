@@ -4,6 +4,10 @@ module Blazer
     before_action :set_data_source, only: [:tables, :docs, :schema, :cancel]
 
     def home
+      if Blazer::Dashboard.first 
+        redirect_to dashboard_path(Blazer::Dashboard.first)
+        return
+      end
       set_queries(1000)
 
       if params[:filter]

@@ -22,6 +22,52 @@ data_sources:
     # use_transaction: false
 
     smart_variables:
+      event_year:
+        - 2011
+        - 2012
+        - 2013
+        - 2014
+        - 2015
+        - 2016
+        - 2017
+        - 2018
+        - 2019
+        - 2020
+        - 2021
+        - 2022
+
+      repo_name:
+        - pingcap/tidb
+        - tikv/tikv
+        - clickhouse/clickhouse
+        - apache/spark
+        - elastic/elasticsearch
+        - cockroachdb/cockroach
+        - prometheus/prometheus
+        - mongodb/mongo
+        - trinodb/trino
+        - redis/redis
+        - apache/lucene-solr
+        - apache/hbase
+        - prestodb/presto
+        - facebook/rocksdb
+        - apache/druid
+        - apache/hive
+        - percona/percona-server
+        - yugabyte/yugabyte-db
+        - apache/lignite
+        - apache/incubator-doris
+        - citusdata/citus
+        - timescale/timescaledb
+        - apache/kylin
+        - greenplum-db/gpdb
+        - alibaba/oceanbase
+        - influxdata/influxdb
+        - vesoft-inc/nebula
+        - scylladb/scylla
+        - apache/hadoop
+        - apache/couchdb
+        
       language:
         - JavaScript
         - Python
@@ -37,6 +83,7 @@ data_sources:
         - Shell
         - TypeScript
         - Scala
+        - Rust
 
       oss_db_org:
         - pingcap
@@ -74,7 +121,7 @@ data_sources:
         - scylladb/scylla
         - apache/hadoop
         - apache/couchdb
-        
+
       event_type:
         - IssuesEvent
         - CreateEvent

@@ -9,9 +9,11 @@
           <%= @dashboard.name %>
         </h3>
       </div>
+      <% if params[:admin].present? %>
       <div class="col-sm-3 text-right">
         <%= link_to "Edit", edit_dashboard_path(@dashboard, variable_params(@dashboard)), class: "btn btn-info" %>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
