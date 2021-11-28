@@ -6,7 +6,7 @@ data_sources:
 
     # statement timeout, in seconds
     # none by default
-    timeout: 20
+    timeout: 60
 
     # caching settings
     # can greatly improve speed
@@ -14,7 +14,7 @@ data_sources:
     cache:
       mode: slow # or all
       expires_in: 60 # min
-      slow_threshold: 10 # sec, only used in slow mode
+      slow_threshold: 15 # sec, only used in slow mode
 
     # wrap queries in a transaction for safety
     # not necessary if you use a read-only user
@@ -67,7 +67,7 @@ data_sources:
         - scylladb/scylla
         - apache/hadoop
         - apache/couchdb
-        
+
       language:
         - JavaScript
         - Python
