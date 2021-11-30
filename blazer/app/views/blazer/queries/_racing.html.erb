@@ -1,7 +1,6 @@
-<% p @rows %>
-<% p @columns %>
-<% p @query %>
-<div id="889e350fd6c25658f3293aaa9f5e8198" style="height: 560px; width: 100%; text-align: center; color: #999; line-height: 300px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div>
+<% div_id = SecureRandom.hex %>
+
+<div id="<%= div_id %>" style="height: 560px; width: 100%; text-align: center; color: #999; line-height: 300px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div>
 <script>
   /**
  * ---------------------------------------
@@ -19,7 +18,7 @@
 am4core.useTheme(am4themes_animated);
 // Themes end
 am4core.globalAdapter.addAll(2)
-var chart = am4core.create("889e350fd6c25658f3293aaa9f5e8198", am4charts.XYChart);
+var chart = am4core.create("<%= div_id %>", am4charts.XYChart);
 chart.padding(40, 40, 40, 40);
 chart.numberFormatter.numberFormat = "#,###.";
 var label = chart.plotContainer.createChild(am4core.Label);
