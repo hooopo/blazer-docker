@@ -122,6 +122,25 @@ data_sources:
         - apache/hadoop
         - apache/couchdb
 
+      top_n:
+        - 10
+        - 20
+        - 30
+        - 40
+        - 50
+
+      recent_years:
+        - 10
+        - 9
+        - 8
+        - 7
+        - 6
+        - 5
+        - 4
+        - 3
+        - 2
+        - 1
+
       event_type:
         - IssuesEvent
         - CreateEvent
