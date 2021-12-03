@@ -176,7 +176,7 @@
                         <% if v.is_a?(String) && v == "" %>
                           <div class="text-muted">empty string</div>
                         <% elsif @linked_columns[k] %>
-                          <%= link_to blazer_format_value(k, v), @linked_columns[k].gsub("{value}", u(v.to_s)), target: "_blank" %>
+                          <%= link_to blazer_format_value(k, v).html_safe, @linked_columns[k].gsub("{value}", v.to_s.html_safe), target: "_blank" %>
                         <% else %>
                           <%= blazer_format_value(k, v) %>
                         <% end %>

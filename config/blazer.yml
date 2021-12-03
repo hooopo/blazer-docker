@@ -148,7 +148,9 @@ data_sources:
       # status: {0: "Active", 1: "Archived"}
 
     linked_columns:
-      # user_id: "/admin/users/{value}"
+      actor_login: "https://github.com/{value}"
+      repo_name: "https://github.com/{value}"
+      org_login: "https://github.com/{value}"
 
     smart_columns:
       # user_id: "SELECT id, name FROM users WHERE id IN {value}"
