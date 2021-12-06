@@ -36,37 +36,7 @@ data_sources:
         - 2021
         - 2022
 
-      repo_name:
-        - pingcap/tidb
-        - tikv/tikv
-        - clickhouse/clickhouse
-        - apache/spark
-        - elastic/elasticsearch
-        - cockroachdb/cockroach
-        - prometheus/prometheus
-        - mongodb/mongo
-        - trinodb/trino
-        - redis/redis
-        - apache/lucene-solr
-        - apache/hbase
-        - prestodb/presto
-        - facebook/rocksdb
-        - apache/druid
-        - apache/hive
-        - percona/percona-server
-        - yugabyte/yugabyte-db
-        - apache/lignite
-        - apache/incubator-doris
-        - citusdata/citus
-        - timescale/timescaledb
-        - apache/kylin
-        - greenplum-db/gpdb
-        - alibaba/oceanbase
-        - influxdata/influxdb
-        - vesoft-inc/nebula
-        - scylladb/scylla
-        - apache/hadoop
-        - apache/couchdb
+      db_repo: "select name from db_repos order by id asc"
 
       language:
         - JavaScript
@@ -85,42 +55,7 @@ data_sources:
         - Scala
         - Rust
 
-      oss_db_org:
-        - pingcap
-        - elastic
-        - tikv
-
-      oss_db_repo:
-        - pingcap/tidb
-        - tikv/tikv
-        - clickhouse/clickhouse
-        - apache/spark
-        - elastic/elasticsearch
-        - cockroachdb/cockroach
-        - prometheus/prometheus
-        - mongodb/mongo
-        - trinodb/trino
-        - redis/redis
-        - apache/lucene-solr
-        - apache/hbase
-        - prestodb/presto
-        - facebook/rocksdb
-        - apache/druid
-        - apache/hive
-        - percona/percona-server
-        - yugabyte/yugabyte-db
-        - apache/lignite
-        - apache/incubator-doris
-        - citusdata/citus
-        - timescale/timescaledb
-        - apache/kylin
-        - greenplum-db/gpdb
-        - alibaba/oceanbase
-        - influxdata/influxdb
-        - vesoft-inc/nebula
-        - scylladb/scylla
-        - apache/hadoop
-        - apache/couchdb
+      cn_org: "SELECT name FROM cn_orgs ORDER BY company ASC"
 
       top_n:
         - 10
